@@ -28,9 +28,13 @@ $> gcc hello.s -o hello //建立链接
 $> make hello
 cc     hello.c   -o hello 
 ```
-备注：
+
+TIPS：
 - 程序中#开头的部分，在预处理阶段进行预处理
 - make命令会针对输入的hello 找到 hello.c文件
 - cc为编译工具
+- 代码要求：防止写越界、防止内存泄露、谁打开谁关闭、谁申请谁释放
+- 如上hello.c 例子中，main 函数如果没有return 0 或者exit(0)；则返回值为printf的返回值！
+-  
 
  
