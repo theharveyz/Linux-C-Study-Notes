@@ -12,8 +12,10 @@
 
 ###可执行文件生成步骤
 源代码 -> 预处理 -> 编译 -> 汇编 -> 链接 -> 可执行文件
+
 1. gcc编译步骤
 ```SHELL
+$> #gcc hello.c -Wall 打印出程序所有的警告
 $> gcc -E hello.c > hello.i  //生成预编译文件
 $> gcc -S hello.i  //编译成汇编
 $> gcc -c hello.s  //编译成二进制文件
