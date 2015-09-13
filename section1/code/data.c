@@ -5,6 +5,7 @@
 int main()
 {
 	bool s = false;
-	printf("s=%d\n", s);
+	unsigned int a = 0xFE; //16进制
+	printf("s=%d , a=%d\n", s, a);
 	exit(0);
 }
